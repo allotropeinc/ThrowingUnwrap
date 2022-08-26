@@ -1,7 +1,7 @@
 import Foundation
 
 /// A hypergeneric error, meant to be extended to support whatever values you need.
-struct UnwrapError: Error {
+public struct UnwrapError: Error {
 	var failedType: Any.Type
 }
 
