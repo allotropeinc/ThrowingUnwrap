@@ -10,7 +10,7 @@ Add this to the package-wide `dependencies` in Package.swift:
 ```
 
 And add this to the target-specific `dependencies`:
-```
+```swift
 .product(name: "ThrowingUnwrap", package: "ThrowingUnwrap")
 ```
 
