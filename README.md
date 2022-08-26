@@ -20,7 +20,7 @@ And add this to the target-specific `dependencies`:
 func test() throws -> String {
   let stringThing: String? = "Hello world!" // Optional string, but not nil...
   let attempt = try stringThing~! // ...therefore, unwrap succeeds...
-  return attempt /// ...and we can return the value.
+  return attempt // ...and we can return the value.
 }
 ```
 
@@ -30,7 +30,7 @@ Let's look at an example when the value is `nil`:
 func test() throws -> String {
   let stringThing: String? = nil // It's nil this time...
   let attempt = try stringThing~! // ...therefore, unwrap fails...
-  return attempt /// ...and this never gets called.
+  return attempt // ...and this never gets called.
 }
 ```
 
