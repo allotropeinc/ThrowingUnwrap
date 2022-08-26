@@ -2,7 +2,7 @@ import Foundation
 
 /// A hypergeneric error, meant to be extended to support whatever values you need.
 public struct UnwrapError: Error {
-	var failedType: Any.Type
+	public var failedType: Any.Type
 }
 
 public extension Optional {

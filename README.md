@@ -2,7 +2,19 @@
 
 A simple package to add a throwing unwrap operator (`~!`) to Optionals in Swift.
 
-You can use it like so:
+## Import
+
+Add this to the package-wide `dependencies` in Package.swift:
+```swift
+.package(url: "https://github.com/allotropeinc/ThrowingUnwrap.git", from: "1.0.0")
+```
+
+And add this to the target-specific `dependencies`:
+```
+.product(name: "ThrowingUnwrap", package: "ThrowingUnwrap")
+```
+
+## Usage
 
 ```swift
 func test() throws -> String {
